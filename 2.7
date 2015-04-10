@@ -1,0 +1,11 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.printf("输入分钟:");
+	int n = input.nextInt();
+	System.out.printf(n + "是" + n / (60 * 24 * 365) + "年" + (int)((n / (60.0 * 24 * 365) - n / (60 * 24 * 365)) * 365) + "天");
+  }
+}
