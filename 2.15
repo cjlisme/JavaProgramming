@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.printf("输入月数:");
+	int n = input.nextInt();
+	double sum = 0;
+	for(;n>0;n--){
+		sum += 100;
+		sum *= 1 + 0.05/12;
+		}
+	System.out.println("钱数为" + sum);
+  }
+}
