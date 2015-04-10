@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text {
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+	System.out.printf("请输入速度v与加速度a:");
+	double v = input.nextDouble();
+	double a = input.nextDouble();
+	System.out.println("飞机起飞所需要的最短跑道长度为:" + ((v*v)/(2*a)));
+	}
+}
