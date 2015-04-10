@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+import javax.swing.JFrame;
+
+public class text{
+  public static void main(String[] args){
+	final double PI = 3.14159;
+	Scanner input = new Scanner(System.in);
+	System.out.printf("请输入圆柱体的半径与高：");
+	double r = input.nextDouble();
+	double h = input.nextDouble();
+	System.out.println("面积是:" + r*r*PI);
+	System.out.println("体积是:" + r*r*PI*h);
+  }
+}
