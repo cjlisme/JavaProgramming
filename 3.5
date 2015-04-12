@@ -1,0 +1,14 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	int i = (int)(System.currentTimeMillis()%10);
+	int j = (int)(System.currentTimeMillis()*3%10);
+	int k = (int)(System.currentTimeMillis()*4%10);
+	Scanner input = new Scanner(System.in);
+	System.out.printf("%d + %d + %d = ?：",i,j,k);
+	int answer = input.nextInt();
+	System.out.println(answer == i + j +k);
+  }
+}
