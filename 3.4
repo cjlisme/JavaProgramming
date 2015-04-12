@@ -1,0 +1,13 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	int i = (int)(Math.random()*100);
+	int j = (int)(Math.random()*100);
+	Scanner input = new Scanner(System.in);
+	System.out.printf("%d + %d = ?：",i,j);
+	int answer = input.nextInt();
+	System.out.println(answer == i + j);
+  }
+}
