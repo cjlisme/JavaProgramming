@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	char i = 'a';
+	int n;
+	double a=0,b=0,c=0,d=0,e=0,f=0;
+	Scanner input = new Scanner (System.in);
+	for(n=0;n<6;n++){
+		System.out.printf("请输入%c值:\n",i++);
+		switch(n){
+			case 0: a = input.nextDouble();break;
+			case 1: b = input.nextDouble();break;
+			case 2: c = input.nextDouble();break;
+			case 3: d = input.nextDouble();break;
+			case 4: e = input.nextDouble();break;
+			case 5: f = input.nextDouble();break;
+		}
+	}
+	System.out.printf("%.1fx + %.1fy = %.1f\n",a,b,e);
+	System.out.printf("%.1fx + %.1fy = %.1f\n",c,d,f);
+	if(a * d - b * c == 0)
+		System.out.println("无解！");
+	else
+		System.out.printf("x = %.1f\ny = %.1f\n",(e * d - b * f)/(a * d - b * c),(a * f - e * c)/(a * d - b * c ));
+  }
+}
