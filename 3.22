@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.println("请输入一个点(x,y)的x与y：");
+	int x = input.nextInt();
+	int y = input.nextInt();
+	if(Math.pow(x*x+y*y,0.5)<=10)
+		System.out.println("圆內");
+	else
+		System.out.println("圆外");
+  }
+}
