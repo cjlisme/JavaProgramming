@@ -1,0 +1,24 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text {
+public static void main(String[] args) {
+	String[][] n = {{"Ace"},{"2"},{"3"},{"4"},{"5"},{"6"},{"7"},{"8"},{"9"},{"10"},{"Jack"},{"Queen"},{"King"}};
+	String[][] h = {{"Clubs"},{"Diamond"},{"Heart"},{"Spades"}};
+	double i = Math.random();
+	double j = Math.random();
+	while(true)
+	{
+		if((i > 0.13)||(j > 0.4))
+		{
+			i = Math.random();
+			j = Math.random();
+			continue;
+		}
+		System.out.printf("The card you just pick is %s of",n[(int)(i*100)]);//无法写在一起显示字符串
+		System.out.printf(" %s",h[(int)(j*10)]);
+		break;
+	}
+	//System.out.printf("The card you just pick is%s",n[0]);
+	}
+}
