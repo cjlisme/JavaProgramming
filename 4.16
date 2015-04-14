@@ -1,0 +1,21 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class text{
+  public static void main(String[] args){
+	Scanner input = new Scanner(System.in);
+	System.out.printf("输入一个整数:");
+	int n = input.nextInt(),i=2;
+	while(true){
+		if(n%i!=0)
+			i++;
+		else if(n%i==0){
+			n/=i;
+			System.out.print(i+" " );
+			i=2;
+			if(n==i)
+				break;
+		}
+	}
+  }
+}
