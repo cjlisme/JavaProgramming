@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class text{
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int a[] = new int[10];
+		int b[] = new int[a.length];
+		for(int i = 0;i < 10;i++){
+			a[i] = input.nextInt();
+			b[9 - i] = a[i];
+		}
+		for(int i = 0;i < 10;i++)
+			System.out.printf("%d ",b[i]);
+	}
+}
+	
