@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class text{
+	public static int triangle(int n){
+		int c = 0;
+		while(n > 0){
+			c += n % 10;
+			n /= 10;
+			}
+		return c;
+		} 
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt();
+		System.out.printf("各位相加为 %d ",triangle(n));	
+			}
+}
