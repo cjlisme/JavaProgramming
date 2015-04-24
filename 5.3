@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class text{
+	public static int reverse(int n){
+		int s = n,c=0;
+		while(n > 0){
+			n /= 10;
+			c++;
+			}
+		n = s;
+		s = 0;
+		while(n > 0){
+			s += (n % 10) * Math.pow(10,--c);
+			n /= 10;
+			}
+		return s;
+		} 
+	public static boolean judge(int s,int n){
+			if(s == n)
+				return true;
+			else
+				return false;
+		}
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		int n = input.nextInt(), s;
+		boolean flag;
+		s = reverse(n); 
+		flag = judge(s,n);
+		if(flag)
+			System.out.printf("是回文");
+		else
+			System.out.printf("不是回文");
+			}
+}
