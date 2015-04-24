@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class text{
+	public static int getRandom(int n){
+		int i;
+		while(true){
+			i = (int)(Math.random() * 54);
+			if(i != n){
+				break;
+			}
+		}
+		return i;
+	}
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.printf("请输入一个1到54之间的数，程序将返回除这个以外的一个随机数:");
+		int n = input.nextInt();
+		System.out.printf("%d",getRandom(n));
+	}
+}
+	
