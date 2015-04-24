@@ -1,0 +1,17 @@
+public class text{
+	public static int triangle(int n){
+		int r;
+		r = n * (3*n - 1) / 2;
+		return r;
+		} 
+	public static void main(String[] args){
+		int s;
+		for(int i = 1;i < 101; i++){
+			s = triangle(i);
+			System.out.printf("%d ",s);
+
+			if(i % 10 == 0)
+				System.out.printf("\n");
+			}
+		}
+	}
