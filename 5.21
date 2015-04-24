@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class text{
+	public static double aver(double a){
+		a /= 10;
+		return a;
+		} 
+	public static double ax(double sum,double sum2){
+		double result;
+		result = Math.pow((((sum2 - (sum*sum) / 10) / 9)),1/2);
+		return result;
+		}
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		double sum = 0,sum2 = 0;
+		for(int i = 0;i < 10;i++){
+			double n = input.nextInt();
+			sum += n;
+			sum2 += n*n;
+		}
+		System.out.printf("均值为:" + aver(sum) + "\n标准差为:" + ax(sum,sum2));
+	}
+}
